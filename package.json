@@ -4,6 +4,8 @@
   "description": "social media app",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec \"npm run lint && ts-node src/server.ts\"",
     "lint": "eslint 'src/**/*.ts?(x)'",
